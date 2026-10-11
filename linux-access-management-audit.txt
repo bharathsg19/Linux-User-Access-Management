@@ -1,0 +1,21 @@
+======================================
+Linux User Access Audit Report
+Sun Oct 11 03:28:12 PM IST 2026
+======================================
+
+----- Test User Accounts -----
+uid=1001(support01) gid=1004(support01) groups=1004(support01),1001(it_support)
+uid=1002(security01) gid=1005(security01) groups=1005(security01),1002(security_team)
+uid=1003(hr01) gid=1006(hr01) groups=1006(hr01),1003(hr_team)
+
+----- Department Groups -----
+it_support:x:1001:support01
+security_team:x:1002:security01
+hr_team:x:1003:hr01
+
+----- Department Directory Permissions -----
+drwxrws--- 2770 root:it_support /srv/company/it_support
+drwxrws--- 2770 root:security_team /srv/company/security
+drwxrws--- 2770 root:hr_team /srv/company/hr
+
+----- Audit Complete -----
